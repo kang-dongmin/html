@@ -10,7 +10,11 @@
     <h1>2줄 3칸 기본 표 만들기</h1>
 
     <table border="1" width="50%">
-
+        <caption>
+            <strong>기본 테이블 입니다.</strong>
+            <br>
+            2줄 3칸짜리 표 입니다.
+        </caption>
         <!--1번 줄-->
         <tr>
             <td>1</td>
@@ -30,6 +34,12 @@
 
     <h1>표에 제목 셀 만들기</h1>
 
+    <!--figcaption은 <table> 밖에 씀-->
+    <figure>
+        <figcaption>
+            표에 제목 셀 만들기 입니다.
+        </figcaption>
+    </figure>
     <table border="1" width="100%">
 
         <tr>
@@ -66,7 +76,7 @@
             <td>7</td>
            
         </tr>
-
+            <thea
         <tr>
            
             <td>10</td>
@@ -75,6 +85,96 @@
         </tr>
     </table>
 
+    <hr>
+    <h1> 시간표</h1>
+    <!-- t : table-->
+    <!-- thead, tbody, tfooter-->
 
-</body>
+    <!-- 셀 병합 시 기준 칸으로 들어감
+        열 병합 시 하위 열은 없어짐-->
+
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+            <th>1교시</th>
+            <td></td>
+            <td rowspan=2>C#</td>
+            <td>컴퓨터구조</td>
+            <td></td>
+            <td></td>
+           </tr>
+           <tr>
+            <th>2교시</th>
+            <td></td>
+            <td></td>
+            <td rowspan="2">C#</td>
+            <td></td>
+           </tr>
+           <tr>
+            <th>3교시</th>
+            <td rowspan="2">시스템운영</td>
+            <td></td>
+            <td></td>
+            <td rowspan="2">시스템운영</td>
+           </tr>
+           <tr>
+            <th>4교시</th>
+            <td></td>
+            <td></td>
+            <td></td>
+           </tr>
+           <tr>
+            <th>5교시</th>
+            <td rowspan="2">웹제작</td>
+            <td rowspan="4">Java</td>
+            <td></td>
+            <td></td>
+            <td></td>
+           </tr>
+           <tr>
+            <th>6교시</th>
+            <td></td>
+            <td></td>
+            <td></td>
+           </tr>
+           <tr>
+            <th>7교시</th>
+            <td rowspan="2">컴퓨터구조</td>
+            <td rowspan="2">화랑인문강좌</td>
+            <td>역량개발과 진로설계</td>
+            <td></td>
+           
+           </tr>
+           <tr>
+            <th>8교시</th>
+            <td></td>
+            <td></td>
+            
+           
+           </tr>
+           <tr>
+            <th>9교시</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           </tr>
+        </tbody>
+        <tfoot>
+           <td colspan="6">1교시 수업시작은 9시 30분 입니다.</td>
+        </tfoot>
+    </table>
+    
+    </body>
 </html>
