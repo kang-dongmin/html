@@ -1,0 +1,96 @@
+/*
+문서 전체에 글꼴 : 맑은 고딕
+바깥 여백 : 5px
+
+*/
+
+body {                                     /*  * : 문서 전체   */
+    font-family: "맑은 고딕";
+    margin : 10px;
+}
+
+/*header, footer - 안쪽 여백 20px,, 배경색 아무거나, 가운데 정렬*/
+
+header, footer {
+    margin : 20px;
+    background-color : skyblue;
+    text-align: center;     /*글자뿐만 아니라 그림도 정렬 가능하다*/
+    /*maring : auto -> 영역 건드리기 */
+}
+
+/*배경색 아무거나, 가운데 정렬, 글자 크기 : 18px, 진하게, 안쪽 여백 20px*/
+nav {
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding : 20px;
+}
+
+/* 하이퍼링크 : 밑줄 없음, 가로 길이 100px, 세로길이 30px, 안쪽여백 20px */
+nav a {
+    text-decoration: none;
+    width : 100px;          /**/ 
+    height : 30px;
+    padding : 10px;
+    display : inline-block;
+}
+
+a:link, a:visited {
+    color:black;
+}
+a:hover, a:active {
+    color : white;
+    background-color :darksalmon;
+    text-decoration: underline;
+}
+
+
+/*section - 배경 색상, 테두리, 가로길이 : 48%, 높이 : 200px, 왼쪽 float*/
+section {
+    background-color: antiquewhite;
+    border : 2px solid black;
+    width : 48%;
+    height : 200px;
+    float : left;
+}
+
+/*footer clear 적용*/
+footer {
+    clear : both;
+}
+
+
+/*각 seciont의 제목 글자 색상과 여백 동일하게*/
+
+/*각 seciont의 제목의 배경 색상은 각각 다르게 설정*/
+
+.c1 {
+    color : white;
+    padding : 5px;
+    margin : 5px;
+}
+
+#s1 h1 {
+    background-color :pink;
+}
+
+#s2 h1 {
+    background-color: red;
+}
+
+#s3 h1 {
+    background-color: coral;
+}
+
+#s4 h1 {
+    background-color: yellowgreen;
+}
+
+#s5 h1 {
+    background-color: green;
+}
+
+#s6 h1 {
+    background-color: blue;
+}
