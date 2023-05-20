@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자1 - 강동민</title>
+
+    <style>
+        ul {
+            list-style : none;
+        }
+
+        li {                                                            
+            margin : 10px;
+        }   
+
+        li > a {    /* >는 li의 자식을 뜻함 */
+            text-decoration: none;
+            color : black;
+            font-size : 14px;
+            padding : 5px 20px;
+           
+        }
+
+        a[href] {       /*a 중에서도 href에만 적용할려면 []*/
+            background-color: yellow;
+        }
+
+        a[target="_blank"] {
+            background: url(C:\웹제작_강동민\12장\images\newwindow.png) no-repeat right center;
+            padding-right : 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 표준안 사이트</h1>
+    <ul>
+        <li><a href="http://www.w3c.org/TR/html" target="_blank">HTML</a></li>
+        <li><a href="https://www.w3.org/TR/selectors">CSS Selector Level 3</a></li>
+        <li><a href="https://www.w3.org/TR/css3-mediaqueries">미디어쿼리</a></li>
+    </ul>
+</body>
+</html>
