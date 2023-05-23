@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tansform 6</title>
+    <style>
+        .origin {
+            width  : 160px;
+            height : 240px;
+            margin : 40px;
+            float  : left;
+            border : 1px solid black;
+        }
+        .skewx:hover {
+            -webkit-transform: skewX(40deg);
+            -ms-transform: skewX(40deg);
+            -moz-transform: skewX(40deg);
+            -o-transform: skewX(40deg);
+            transform : skewX(40deg);
+        }
+
+        .rose {
+            transform : rotatez(10deg);
+        }
+
+        .ltop .rose {
+            -webkit-transform-origin : left top;
+            transform-origin : left top;
+        }
+
+        .rtop .rose {
+            -webkit-transform-origin : right top;       
+            transform-origin : left top;
+        }
+
+        .lbottom .rose {
+            -webkit-transform-origin : left bottom;
+            transform-origin : left top;
+        }
+        
+        .rbottom .rose {
+            -webkit-transform-origin : right bottom;
+            transform-origin : left top;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="ltop">
+            <img src="images/rose.jpg" class="rose">
+        </div>
+    </div>
+
+
+    <div class="origin">
+        <div class="rtop">
+            <img src="images/rose.jpg" class="rose">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="lbottom">
+            <img src="images/rose.jpg" class="rose">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="srbottom">
+            <img src="images/rose.jpg" class="rose">
+        </div>
+    </div>
+
+   
+
+</body>
+</html>
