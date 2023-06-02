@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 3 - 강동민</title>
+
+<style>
+    #box1 {
+        height : 60px;
+        margin-top : 50px;
+        margin-left : 100px;
+        padding : 20px;
+        animation-name : moving;
+        animation-duration : 3s;
+        animation-direction : normal;
+        animation-iteration-count : infinite;
+    }    
+
+    @keyframes moving {
+        from{
+            width : 200px;
+            background-color: rgb(214, 170, 170);
+            transform : scale(0.5) rotate(15deg);
+            opacity : 0.5;
+        }
+
+        to {    
+            width : 400px;
+            background-color: darkred;
+            transform : scale(1) rotate(0);
+        }
+    }
+
+</style>
+
+</head>
+<body>
+    <div id="box1">
+        <h2>CSS3 Animation</h1>
+    </div>
+
+</body>
+</html>

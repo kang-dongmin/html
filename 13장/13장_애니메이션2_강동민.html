@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 2 - 강동민</title>
+
+<style>
+    div {
+        width : 100px;
+        height : 100px;
+        float : left;
+        margin : 50px;
+        
+    }
+
+    #box1 {
+        background-color: green;
+        animation-name : change-shape;
+        animation-duration : 3s;
+    }
+
+    #box2
+    {
+        background-color: aquamarine;
+        animation-name: rotate;
+        animation-duration: 2s;
+    }
+
+
+    @keyframes change-shape {
+        from {
+            background-color: green;
+            border : 2px solid black;
+        }
+
+        to {
+            background-color: rgb(106, 148, 211);
+            border : 2px solid rgb(216, 99, 99);
+            border-radius : 50%;
+        }
+    }
+
+    @keyframes rotate {
+        from{
+            transform : rotate(0deg);
+        }
+        to {
+            transform : rotate(45deg);
+        }
+    }
+
+</style>
+
+</head>
+<body>
+    <div id="box1"></div>
+
+    <div id="box2"></div>
+</body>
+</html>
